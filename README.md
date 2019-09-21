@@ -5,8 +5,11 @@ Vidyo.io (https://vidyo.io/) - Rapidly embed real-time group video chat into you
 This sample app was made using Xamarin Forms and uses XFVidyo nuget library that compressed the Vidyo.io connector for xamarin sdks in a single nuget library.
 
 XFVidyo Nuget: https://www.nuget.org/packages/XFVidyo
+
 vidyo.io-connector-xamarin: https://github.com/Vidyo/vidyo.io-connector-xamarin
+
 Vidyo.io iOS SDK package: https://static.vidyo.io/latest/package/VidyoClient-iOSSDK.zip
+
 Vidyo.io Android SDK package: https://static.vidyo.io/latest/package/VidyoClient-AndroidSDK.zip
 
 ## Usage:
