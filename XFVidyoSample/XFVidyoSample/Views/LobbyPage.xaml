@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="XFVidyoSample.Views.LobbyPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             NavigationPage.HasNavigationBar="False">
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Image Source="vidyo_io.png" />
+        <!--<Label FontSize="Title"
+               HorizontalTextAlignment="Center"
+               Text="Vidyo.io"
+               TextColor="Black"
+               VerticalTextAlignment="Center" />-->
+
+        <StackLayout Grid.Row="1"
+                     Spacing="8">
+            <StackLayout Spacing="4">
+                <Label FontSize="Caption"
+                       Text="Display Name" />
+                <Entry Text="{Binding DisplayName}" />
+
+                <Label FontSize="Caption"
+                       Text="Room Name" />
+                <Entry IsReadOnly="True"
+                       Text="{Binding RoomName}" />
+            </StackLayout>
+
+            <Button BackgroundColor="Black"
+                    Command="{Binding ProceedCommand}"
+                    HorizontalOptions="FillAndExpand"
+                    Text="Proceed"
+                    TextColor="White" />
+        </StackLayout>
+
+
+
+
+    </Grid>
+</ContentPage>

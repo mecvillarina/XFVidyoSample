@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="XFVidyoSample.Views.RoomPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             xmlns:xfVidyo="clr-namespace:XFVidyo.Core.Views;assembly=XFVidyo.Core"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             NavigationPage.HasNavigationBar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="305" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="65" />
+            <ColumnDefinition Width="65" />
+            <ColumnDefinition Width="65" />
+            <ColumnDefinition Width="65" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <xfVidyo:VidyoNativeView x:Name="_videoView"
+                                 Grid.Row="0"
+                                 Grid.RowSpan="5"
+                                 Grid.Column="0"
+                                 Grid.ColumnSpan="6" />
+
+        <Image x:Name="_toggleConnectButton"
+               Grid.Row="3"
+               Grid.Column="1"
+               Source="{Binding CallImage}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnConnectButtonClicked" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Image Grid.Row="3"
+               Grid.Column="2"
+               Source="camera_switch.png">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnCycleCameraButtonClicked" />
+            </Image.GestureRecognizers>
+        </Image>
+        <Image Grid.Row="3"
+               Grid.Column="3"
+               Source="{Binding CameraPrivacyImage}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnCameraPrivacyButtonClicked" />
+            </Image.GestureRecognizers>
+        </Image>
+        <Image Grid.Row="3"
+               Grid.Column="4"
+               Source="{Binding MicrophonePrivacyImage}">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnMicrophonePrivacyButtonClicked" />
+            </Image.GestureRecognizers>
+        </Image>
+        <Label Grid.Row="4"
+               Grid.Column="2"
+               Grid.ColumnSpan="2"
+               FontSize="15"
+               HorizontalOptions="Center"
+               Text="{Binding ToolbarStatus}"
+               TextColor="White"
+               VerticalOptions="Center" />
+    </Grid>
+</ContentPage>
