@@ -24,3 +24,39 @@ public const string Key = "vidyo-io-api-key";
 public const string AppId = "vidyo-io-app-id";
 ```
 
+Also, make sure that in your iosProject.csproj, you have added the following configuration for the native iOS linker.
+
+```xml
+<ItemGroup>
+    <NativeReference Include="Native References/libcrypto.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+    <NativeReference Include="Native References/libopus.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+    <NativeReference Include="Native References/libspeex.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+    <NativeReference Include="Native References/libsrtp.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+    <NativeReference Include="Native References/libssl.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+    <NativeReference Include="Native References/libVidyoClient.a">
+      <Kind>Static</Kind>
+      <SmartLink>False</SmartLink>
+      <Frameworks>AudioToolbox AVFoundation CoreLocation CoreMedia SystemConfiguration UIKit</Frameworks>
+    </NativeReference>
+    <NativeReference Include="Native References/VPX.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+    </NativeReference>
+  </ItemGroup>
+
+```
