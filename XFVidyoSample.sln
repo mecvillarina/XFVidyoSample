@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.779
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFVidyoSample", "XFVidyoSample\XFVidyoSample\XFVidyoSample.csproj", "{59FA28CC-E569-4624-85F8-AC3160E639D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XFVidyoSample", "XFVidyoSample\XFVidyoSample\XFVidyoSample.csproj", "{59FA28CC-E569-4624-85F8-AC3160E639D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFVidyoSample.Android", "XFVidyoSample\XFVidyoSample.Android\XFVidyoSample.Android.csproj", "{8C8CF961-42B5-4624-A33D-5343FD5FFD59}"
 EndProject
@@ -71,8 +71,6 @@ Global
 		{8C8CF961-42B5-4624-A33D-5343FD5FFD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C8CF961-42B5-4624-A33D-5343FD5FFD59}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{8C8CF961-42B5-4624-A33D-5343FD5FFD59}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{8C8CF961-42B5-4624-A33D-5343FD5FFD59}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{8C8CF961-42B5-4624-A33D-5343FD5FFD59}.Debug|iPhone.Deploy.0 = Debug|Any CPU
 		{8C8CF961-42B5-4624-A33D-5343FD5FFD59}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{8C8CF961-42B5-4624-A33D-5343FD5FFD59}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{8C8CF961-42B5-4624-A33D-5343FD5FFD59}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
@@ -98,6 +96,7 @@ Global
 		{97649A03-6288-4A3E-9FFD-1B42F0D1E8C9}.Debug|Any CPU.ActiveCfg = Debug|iPhone
 		{97649A03-6288-4A3E-9FFD-1B42F0D1E8C9}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{97649A03-6288-4A3E-9FFD-1B42F0D1E8C9}.Debug|iPhone.Build.0 = Debug|iPhone
+		{97649A03-6288-4A3E-9FFD-1B42F0D1E8C9}.Debug|iPhone.Deploy.0 = Debug|iPhone
 		{97649A03-6288-4A3E-9FFD-1B42F0D1E8C9}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{97649A03-6288-4A3E-9FFD-1B42F0D1E8C9}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{97649A03-6288-4A3E-9FFD-1B42F0D1E8C9}.Release|Any CPU.ActiveCfg = Release|iPhone
